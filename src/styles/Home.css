@@ -1,0 +1,431 @@
+/*Slider*/
+.carousel .carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(255, 220, 210, 0.98);
+  }
+  
+  
+  @media (min-width: 1300px) {
+    .carousel .carousel-indicators button {
+        width: 20px;
+        height: 20px;
+    }
+  }
+  
+  @media (min-width: 1160px) and (max-width: 1300px) {
+    .carousel .carousel-indicators button  {
+      height: 15px;
+      width: 15px;
+      transform: translateY(40%);
+    }
+  }
+  
+  @media (min-width: 990px) and (max-width: 1159px) {
+    .carousel .carousel-indicators button  {
+        height: 14px;
+        width: 14px;
+        transform: translateY(40%);
+    }
+  }
+  
+  @media (min-width: 678px) and (max-width: 990px) {
+    .carousel .carousel-indicators button  {
+        height: 12px;
+        width: 12px;
+        transform: translateY(40%);
+    }
+  }
+  
+  @media (max-width: 677px) and (min-width: 475px) {
+    .carousel .carousel-indicators button  {
+        height: 10px;
+        width: 10px;
+        transform: translateY(50%);
+    }
+  }
+  
+  @media (max-width: 475px) and (min-width: 420px) {
+    .carousel .carousel-indicators button  {
+        height: 10px;
+        width: 10px;
+        transform: translateY(40%);
+    }
+  }
+  
+  @media (max-width: 420px) and (min-width: 330px) {
+    .carousel .carousel-indicators button  {
+        height: 10px;
+        width: 10px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (min-width: 280px) and (max-width: 330px) {
+    .carousel .carousel-indicators button  {
+        height: 8px;
+        width: 8px;
+        transform: translateY(0%);
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .carousel .carousel-indicators button  {
+        width: 5px;
+        height: 5px;
+        transform: translateY(50%);
+    }
+  } 
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    opacity: 0;
+  }
+  
+  .carousel .carousel-caption img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .carousel-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .carousel-caption .mainText {
+    font-family: 'Bunya PERSONAL', sans-serif;     
+  }
+  
+  @media (min-width: 1200px) {
+    .carousel .carousel-caption img {
+        transform: translateY(-40%);
+    }
+    .carousel-caption .mainText {
+        font-size: 50px;
+        transform: translateY(-40%);
+    }
+  }
+  
+  
+  @media (min-width: 990px) and (max-width: 1200px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 90px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 40px;
+        transform: translateY(0%);
+    }
+  }
+  
+  @media (min-width: 914px) and (max-width: 990px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-20%);
+        height: 85px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 35px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (min-width: 841px) and (max-width: 913px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-10%);
+        height: 80px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 30px;
+        transform: translateY(0%);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 841px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 75px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 25px;
+        transform: translateY(-5%);
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 678px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 70px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 20px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (max-width: 678px) and (min-width: 570px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 60px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 18px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (max-width: 570px) and (min-width: 470px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 50px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 15px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (max-width: 470px) and (min-width: 380px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 45px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 12px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (max-width: 380px) and (min-width: 330px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(-0%);
+        height: 45px;
+        width: auto; 
+    }
+    .carousel-caption .mainText {
+        font-size: 12px;
+        transform: translateY(10%);
+    }
+  }
+  
+  @media (min-width: 280px) and (max-width: 330px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(0);
+        height: 30px;
+        width: auto; 
+    }
+    .carousel-caption .mainText{
+        font-size: 12px;
+        transform: translateY(0%);
+    }
+  }
+  @media (max-width: 280px) {
+    .carousel .carousel-caption img  {
+        transform: translateY(70%);
+        height: 30px;
+        width: auto; 
+    }
+    .carousel-caption .mainText{
+        font-size: 12px;
+        transform: translateY(120%);
+    }
+  }
+  
+  .carousel-item img {
+    transform: translateY(-20%);
+    height: auto;
+  }
+  
+  @media (min-width: 1200px) {
+    .carousel-item {
+      height: 400px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .carousel-item {
+      height: 250px; 
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 380px) {
+    .carousel-item {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 380px) and (min-width: 280px) {
+    .carousel-item {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .carousel-item {
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .mainFrame {
+        margin-bottom: 100px;
+        margin-top: 100px;;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .mainFrame {
+        margin-bottom: 80px;
+        margin-top: 80px; 
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 380px) {
+    .mainFrame {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+  }
+  
+  @media (max-width: 380px) and (min-width: 280px) {
+    .mainFrame {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .mainFrame {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+  }
+  
+  /*Picture1 */
+  @media (min-width: 1300px) {
+    .Pic1 img {
+      height: 350px;
+    }
+  }
+  
+  @media (min-width: 1160px) and (max-width: 1300px) {
+    .Pic1 img  {
+      height: 300px; 
+    }
+  }
+  
+  @media (min-width: 990px) and (max-width: 1160px) {
+    .Pic1 img  {
+      height: 260px; 
+    }
+  }
+  
+  @media (min-width: 914px) and (max-width: 990px) {
+    .Pic1 img  {
+      height: 500px; 
+    }
+  }
+  
+  @media (min-width: 841px) and (max-width: 914px) {
+    .Pic1 img  {
+      height: 450px; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 841px) {
+    .Pic1 img  {
+      height: 400px; 
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 678px) {
+    .Pic1 img  {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 678px) and (min-width: 570px) {
+    .Pic1 img  {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 570px) and (min-width: 470px) {
+    .Pic1 img  {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 470px) and (min-width: 380px) {
+    .Pic1 img  {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 380px) and (min-width: 330px) {
+    .Pic1 img  {
+      height: 170px;
+    }
+  }
+  
+  @media (max-width: 330px) and (min-width: 280px) {
+    .Pic1 img  {
+      height: 150px;
+    }
+  }
+  @media (max-width: 280px) {
+    .Pic1 img  {
+      height: 140px;
+    }
+  }
+  
+  /*Footer*/
+  .list-unstyled li a {
+    color: #606060;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 1200px) {
+    .footer img {
+      height: 150px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .footer img {
+        height: 100px;
+      }
+  }
+  
+  @media (max-width: 768px) and (min-width: 380px) {
+    .footer img {
+        height: 75px;
+      }
+  }
+  
+  @media (max-width: 380px) and (min-width: 280px) {
+    .footer img {
+        height: 50px;
+      }
+  }
+  
+  @media (max-width: 280px) {
+    .footer img {
+        height: 30px;
+      }
+  }
+  
+  /*Button animation*/
+  button:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s ease;
+  }

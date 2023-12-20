@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+body {
+  background-color: #ffeaea !important;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; 
+}
+
+.product-card {
+  position: relative;
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffa3a3;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.productImageFrame {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.product-image {
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-details {
+  background-color: #ffa3a3;
+  border-radius: 10px;
+}
+
+.product-details a {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.product-prices {
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  padding-top: 1px;
+  margin-right: 7px;
+  margin-top: 7px;
+  top: 0;
+  right: 0;
+  background-color: rgb(107, 224, 107);
+  border-radius: 5px;
+}
+
+.product-details button {
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000000 ;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+}
+
+.product-details button:hover {
+  border: 1px solid #ffffff ;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100px;
+  }
+
+  .productImageFrame {
+    margin: 2.5px;
+  }
+  
+  .product-image {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 75px;
+  }
+  
+  .product-details a {
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .product-prices {
+    padding: 2.5px;
+    padding-top: 0.5px;
+    margin-right: 3.5px;
+    margin-top: 3.5px;
+    font-size: 8px;
+  }
+  
+  .product-details button {
+    border: 0.5px solid #000000 ;
+    width: 17.5px;
+    height: 17.5px;
+    font-size: 7px;
+  }
+}
