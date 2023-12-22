@@ -1,0 +1,66 @@
+/* styles/UserProfile.css */
+
+.user-profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.user-profile-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.user-name {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.user-data-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.user-data {
+    margin: 20px 0;
+
+    width: 100%;
+    padding: 15px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.1), -1px -1px 3px rgb(0, 0, 0, 0.1);
+
+}
+
+.user-data:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .user-profile-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .user-profile-image {
+        max-width: 100px;
+    }
+
+    .user-data p {
+        margin: 10px 0;
+    }
+}

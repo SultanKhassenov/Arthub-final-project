@@ -1,0 +1,85 @@
+.signIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 400px;
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signIn h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signIn form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn label {
+    margin-bottom: 8px;
+}
+
+.signIn input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signIn button {
+    width: 8em;
+    margin: 0 auto;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signIn button:hover {
+    background-color: #45a049;
+}
+
+.signIn p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signIn a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signIn a:hover {
+    text-decoration: underline;
+}
+
+.signIn select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signIn select:focus {
+    outline: none;
+    border-color: #4caf50; /* Цвет границы при фокусе */
+}
+
+.signIn option {
+    font-size: 16px;
+}

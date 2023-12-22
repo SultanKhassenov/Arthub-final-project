@@ -1,0 +1,21 @@
+.cart {
+    position: fixed;
+    bottom: 60px;
+    border: none;
+    right: 40px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+    background-color: #3498db;
+}
+
+.cart img {
+    padding: 5px;
+    width: 35px;
+    height: 45px;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+    background-color: #59b7ff;
+}
+
