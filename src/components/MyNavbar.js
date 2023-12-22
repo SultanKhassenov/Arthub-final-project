@@ -67,11 +67,12 @@ const MyNavbar = () => {
                 <Container>
                     <Navbar.Brand href="#" style={{height: '0px'}}>
                     <Link to="/" className="nav-link">
-                        <img
-                        src="images/logo.png"
-                        width="auto"
-                        height="40"
-                        className="logo d-inline-block align-top"
+                        
+                        <img src="https://media-public.canva.com/HmznM/MAEnV9HmznM/1/tl.png" width="auto"
+                        height="40" className="logo2 d-inline-block align-top" style={{position: 'absolute'}}
+                        />
+                        <img src="images/logo.png"
+                        width="auto" height="40" className="logo1 d-inline-block align-top"
                         />
                         </Link>
                     </Navbar.Brand>
@@ -84,9 +85,7 @@ const MyNavbar = () => {
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                                     <button className="search-btn btn-outline-success my-2 my-sm-0" type="submit">
                                         <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png"
-                                        width="auto"
-                                        height="20"
-                                        className='searchImg'
+                                        width="auto" height="20" className='searchImg'
                                         />
                                     </button>
                                 </form>
@@ -97,10 +96,11 @@ const MyNavbar = () => {
                                 <Link to="/store" className="nav-link">Store</Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Link to="/cart" className="nav-link">Cart</Link>
+                                <Link to="/aboutUs" className="nav-link">About Us</Link>
                             </Nav.Item>
+
                             <Nav.Item>
-                                <Link to="/signin" className="nav-link">Sign in</Link>
+                                <Link to="/register" className="nav-link">Profile</Link>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
@@ -110,4 +110,5 @@ const MyNavbar = () => {
 }
 
 export default MyNavbar;
+
 
