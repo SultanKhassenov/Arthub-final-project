@@ -1,17 +1,18 @@
 import React from "react";
-import "../styles/Products.css";
 import ProductCard from "./ProductCard";
-function Products({ products, onAdditem }) {
-  const onAdditem2 = (Item) => {
-    onAdditem(Item);
-  };
-  return (
-    <body>
-      <div className="products">
-        <ProductCard products={products} addItem={onAdditem2} />
-      </div>
-    </body>
-  );
+
+function Products({ products, onAddProduct }) {
+    const onAddProduct2 = (Product) => {
+        onAddProduct(Product);
+    };
+
+
+    return (
+        <body style={{backgroundColor: 'white'}}>
+            <ProductCard products={products} addProduct={onAddProduct2} />;
+        </body>
+    )
 }
+
 
 export default Products;
