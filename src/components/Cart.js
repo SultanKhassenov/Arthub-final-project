@@ -1,51 +1,69 @@
 import React, { useState } from "react";
-import "../styles/Products.css";
+import { Modal, Container, Row, Col, Button } from "react-bootstrap";
 
-function Cart({ products }) {
-  const [cartProducts, setCartProducts] = useState(products);
-  const calculateTotalPrice = () => {
-    return products.reduce((total, product) => total + product.price, 0);
-  };
-  const totalPrice = calculateTotalPrice();
+const Cart = ({ show, selectedProducts, onClose, onRemoveProduct }) => {
+    const calculateTotalPrice = () => {
+        return selectedProducts.reduce((total, product) => total + product.price, 0);
+    };
 
-  const handleDeleteProduct = (producta) => {
-    const indexToRemove = cartProducts.findIndex(
-      (product) => product.id === producta.id
+    const totalPrice = calculateTotalPrice();
+
+    const handleDeleteProduct = (product) => {
+        onRemoveProduct(product);
+    };
+
+    return (
+        <Modal show={show} onHide={onClose}>
+            <Modal.Header>
+                <Modal.Title>Cart</Modal.Title>
+
+            </Modal.Header>
+            <Modal.Body >
+                {selectedProducts && selectedProducts.length > 0 ? (
+                    <Container fluid>
+                        <Row>
+                            <Col md={12}>
+                                <div className="cart-products-container">
+                                    {selectedProducts.map((product) => (
+                                        <div key={product.id} className="cart-product-card">
+                                            <div className="productImageFrame">
+                                                <img
+                                                    src={product.urlimage}
+                                                    alt={product.name}
+                                                    className="cart-product-image"
+                                                />
+                                            </div>
+                                            <p className="cart-product-prices">${product.price}</p>
+                                            <div className="deleteFromCart">
+                                                <button
+                                                    onClick={() => handleDeleteProduct(product)}
+                                                >
+                                                    -
+                                                </button>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                ) : (
+                    <p>Your cart is empty.</p>
+                )}
+            </Modal.Body>
+            <Modal.Footer>
+                <p style={{position: 'absolute', left: "10px", padding: '10px', backgroundColor: 'black',
+                    borderRadius: '5px', boxShadow: '0 0 5px rgb(0, 0, 0, 0.2', color: 'white'}}>
+                    sum: ${totalPrice}
+                </p>
+
+                <Button style={{transform: "none"}} variant="secondary" onClick={onClose}>
+                    ✖
+                </Button>
+            </Modal.Footer>
+        </Modal>
     );
-    if (indexToRemove !== -1) {
-      const updatedItems = [...cartProducts];
-      updatedItems.splice(indexToRemove, 1);
-      setCartProducts(updatedItems);
-    }
-  };
-
-  return (
-    <body>
-      <div style={{marginTop: '60px'}}>
-        <div className="products-container">
-          {cartProducts.map((product) => (
-            <div key={product.id} className="product-card">
-              <img
-                src={product.urlimage}
-                alt={product.name}
-                className="product-image"
-              />
-              <div className="product-details">
-                <a href={product.url}>
-                  <h3>{product.name}</h3>
-                </a>
-              </div>
-                <p className="product-prices">● ${product.price}</p>
-              <button onClick={() => handleDeleteProduct(product)}>
-                  Delete
-                </button>
-            </div>
-          ))}
-        </div>
-        <h1>Total price: ${totalPrice}</h1>
-      </div>
-    </body>
-  );
-}
+};
 
 export default Cart;
+
